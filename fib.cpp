@@ -18,11 +18,12 @@ int fib(int x) {
 
 int main(int argc, const char * argv[]) {
 
+	progress_timer t;    ////for time
 
 	int x ;
 	cout << "Enter an index to find fibonacci number: ";
 	cin >> x ;
-    	cout <<"fib number = "<< fib(x) << endl;
+    	cout <<"\nfib number = "<< fib(x) << endl;
 
 	return 0;
 }

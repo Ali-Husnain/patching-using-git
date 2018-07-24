@@ -6,11 +6,11 @@ using namespace boost;
 using namespace std;
 
 
-int fib(int n)
+long fib(int n)
 {
-    int a = 1, b = 1;
+    long a = 1, b = 1;
     for (int i = 3; i <= n; i++) {
-        int c = a + b;
+        long c = a + b;
         a = b;
         b = c;
     }           
@@ -20,11 +20,12 @@ int fib(int n)
 
 int main(int argc, const char * argv[]) {
 
-	
+	progress_timer t;  ////for time
+
 	int x ;
 	cout << "Enter an index to find fibonacci number: ";
 	cin >> x ;
-    	cout <<"fib number = "<< fib(x) << endl;
+    	cout <<"\nfib number = "<< fib(x) << endl;
 
 	return 0;
 }
