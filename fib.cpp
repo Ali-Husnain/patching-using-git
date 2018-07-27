@@ -7,13 +7,16 @@ using namespace std;
 
 
 
-int fib(int x) {
-    if (x <= 1)
-        return x;
-
-    return fib(x-1)+fib(x-2);
+int fib(int n)
+{
+    int a = 1, b = 1;
+    for (int i = 3; i <= n; i++) {
+        int c = a + b;
+        a = b;
+        b = c;
+    }
+    return b;
 }
-
 
 
 int main(int argc, const char * argv[]) {
